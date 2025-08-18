@@ -29,7 +29,7 @@ def calcular_M(R, E, D):
     return round(e, 2), round(r, 2), round(B, 2), round(M, 2)
 
 # Título
-st.title("Calculadora Efecto Multiplicador Monetario")
+st.title("Calculadora Multiplicador Monetario")
 
 # Entradas
 R = st.number_input("Reservas R:", value=20.0, step=0.1)
@@ -53,4 +53,4 @@ if st.button("Calcular M"):
         st.write(f"e (E/D): {e}")
         st.write(f"r (R/D): {r}")
         st.write(f"B (Base Monetaria): {B}")
-        st.write(f"M (Cantidad de Dinero u Oferta Monetaria): {M}")
+        st.write(f"M (Cantidad Nominal de Dinero): {M}")
